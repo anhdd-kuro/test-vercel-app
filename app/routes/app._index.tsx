@@ -6,10 +6,15 @@ import { useLoaderData } from "@remix-run/react";
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   await authenticate.admin(request);
 
-  const mockedData = await fetch("https://jsonplaceholder.typicode.com/todos/1")
+  const mockedData = await fetch("https://jsonplaceholder.typicode.com/todos/1", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
 
   return json({
-    mockedData
+    mockedData: await mockedData.json()
   })
 };
 
@@ -22,6 +27,7 @@ export default function Index() {
   return (
     <div>
       Hello
+      {mockedData?.title}
     </div>
   );
 }

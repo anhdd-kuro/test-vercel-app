@@ -2,7 +2,7 @@
 
 client_id = "3c353b613f55ddf577658897584b001f"
 name = "test-vercel-app"
-application_url = "https://ray-claims-blackjack-virtue.trycloudflare.com"
+application_url = "https://ab-loose-ind-jury.trycloudflare.com"
 embedded = true
 
 [build]
@@ -11,13 +11,13 @@ dev_store_url = "krb-kuro.myshopify.com"
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "write_products,read_products"
 
 [auth]
 redirect_urls = [
-  "https://ray-claims-blackjack-virtue.trycloudflare.com/auth/callback",
-  "https://ray-claims-blackjack-virtue.trycloudflare.com/auth/shopify/callback",
-  "https://ray-claims-blackjack-virtue.trycloudflare.com/api/auth/callback"
+  "https://ab-loose-ind-jury.trycloudflare.com/auth/callback",
+  "https://ab-loose-ind-jury.trycloudflare.com/auth/shopify/callback",
+  "https://ab-loose-ind-jury.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
