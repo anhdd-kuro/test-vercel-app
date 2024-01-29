@@ -24,6 +24,7 @@ export default function App() {
           Home
         </Link>
         <Link to="/app/products">Products page</Link>
+        <Link to="/app/products_2">Products page fetch</Link>
         <Link to="/app/additional">Static page</Link>
       </ui-nav-menu>
       <Outlet />
