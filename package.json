@@ -2,7 +2,7 @@
   "name": "test-vercel-app",
   "private": true,
   "scripts": {
-    "prebuild": "pnpm setup",
+    "prebuild": "pnpm run setup",
     "build": "tsc && remix build",
     "predev": "prisma generate && prisma migrate deploy",
     "dev": "shopify app dev",
