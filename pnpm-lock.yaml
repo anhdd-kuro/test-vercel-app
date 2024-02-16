@@ -41,6 +41,9 @@ importers:
       '@shopify/shopify-app-session-storage-prisma':
         specifier: ^4.0.0
         version: 4.0.0(@prisma/client@5.9.1)(@shopify/shopify-api@9.3.0)(@shopify/shopify-app-session-storage@2.1.0)(prisma@5.9.1)
+      '@vercel/remix':
+        specifier: 2.6.0
+        version: 2.6.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
       isbot:
         specifier: ^5.0.0
         version: 5.0.0
@@ -3952,6 +3955,22 @@ packages:
 
   /@vanilla-extract/private@1.0.3:
     resolution: {integrity: sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==}
+    dev: false
+
+  /@vercel/remix@2.6.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-uP9ny5WE/1zELj786PC77DBQsqV1uOC0yF8lxFdJFPbcRn/E3yCQolwheyWP4khj2DTQ6MCCX8mqhkUWaxPkpw==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      '@remix-run/node': 2.6.0(typescript@5.3.3)
+      '@remix-run/server-runtime': 2.6.0(typescript@5.3.3)
+      isbot: 3.8.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    transitivePeerDependencies:
+      - typescript
     dev: false
 
   /@web3-storage/multipart-parser@1.0.0:
