@@ -36,8 +36,8 @@ importers:
         specifier: ^9.3.0
         version: 9.3.0
       '@shopify/shopify-app-remix':
-        specifier: ^2.4.0
-        version: 2.4.0(@remix-run/react@2.6.0)(@shopify/polaris@12.15.0)(react@18.2.0)(typescript@5.3.3)
+        specifier: 2.5.1
+        version: 2.5.1(@remix-run/react@2.6.0)(@shopify/polaris@12.15.0)(react@18.2.0)(typescript@5.3.3)
       '@shopify/shopify-app-session-storage-prisma':
         specifier: ^3.0.0
         version: 3.0.0(@prisma/client@5.9.1)(@shopify/shopify-api@9.3.0)(@shopify/shopify-app-session-storage@2.0.4)(prisma@5.9.1)
@@ -3161,12 +3161,6 @@ packages:
     resolution: {integrity: sha512-RbhOOTCNoCrbfkRyoXODZp75MlpiHMgbE5MEBZAnnnLyQNgrigEj4p0lzsMDyc1zVsJDLrivB58tgg3emX0eEA==}
     dev: true
 
-  /@shopify/admin-api-client@0.2.3:
-    resolution: {integrity: sha512-IYAKgaRoqTLlgAanvbgk3ifBWQoBaQIYAIZkMkZS7lk1ESi9tWsxYj+XHfBIhECv2/NlxQkdAzMjlR+etFiTUg==}
-    dependencies:
-      '@shopify/graphql-client': 0.9.3
-    dev: false
-
   /@shopify/admin-api-client@0.2.4:
     resolution: {integrity: sha512-a1EytG/uxtESpzN8h74g3j8lt+12yvcF8TJy49Jo1OQ5kxP2qTf+uxApPe2arBUuwIwfCFGwwnqp6w6FNDjfDA==}
     dependencies:
@@ -3356,10 +3350,6 @@ packages:
       node-fetch: 3.3.2
     dev: false
 
-  /@shopify/graphql-client@0.9.3:
-    resolution: {integrity: sha512-2FEg6/Ue98ozJK3hFOj8kxMTiimW2eiYLDn7k+9ZqYWQ2eg+HHmdW+r5upw3jgT/2FPNYwqyz8qaZxPoxbP9Bw==}
-    dev: false
-
   /@shopify/graphql-client@0.9.4:
     resolution: {integrity: sha512-6O2FEda9iGpeFftBvicLzgMu3mq0ovfsK3IDz6G89bU5R06YDccdKLF/qyp/bzdl2jsbqvNtgEBL00xx95utPA==}
     dev: false
@@ -3498,8 +3488,8 @@ packages:
       - encoding
     dev: false
 
-  /@shopify/shopify-app-remix@2.4.0(@remix-run/react@2.6.0)(@shopify/polaris@12.15.0)(react@18.2.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-jf36DmbVetip66kiPokYTvAEOJt7wbthcCmnhR/5HHNK2lvIQgElObNCsVzX60//1SSywZl7efjL4H/CAXgD8Q==}
+  /@shopify/shopify-app-remix@2.5.1(@remix-run/react@2.6.0)(@shopify/polaris@12.15.0)(react@18.2.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-+5JRI0UObIwftsWyAbU0hzc+tU9Av0TbZQm+acztVmYg8qe9AVj0lCU56kBsVWW9HXO3QYSSvGu6a6XfyR3Zlw==}
     peerDependencies:
       '@remix-run/react': '*'
       '@shopify/polaris': '*'
@@ -3510,11 +3500,11 @@ packages:
     dependencies:
       '@remix-run/react': 2.6.0(react-dom@18.2.0)(react@18.2.0)(typescript@5.3.3)
       '@remix-run/server-runtime': 2.6.0(typescript@5.3.3)
-      '@shopify/admin-api-client': 0.2.3
+      '@shopify/admin-api-client': 0.2.4
       '@shopify/polaris': 12.15.0(react-dom@18.2.0)(react@18.2.0)
       '@shopify/shopify-api': 9.3.0
-      '@shopify/shopify-app-session-storage': 2.0.4(@shopify/shopify-api@9.3.0)
-      '@shopify/storefront-api-client': 0.2.3
+      '@shopify/shopify-app-session-storage': 2.1.0(@shopify/shopify-api@9.3.0)
+      '@shopify/storefront-api-client': 0.2.4
       isbot: 3.8.0
       react: 18.2.0
       semver: 7.6.0
@@ -3545,10 +3535,12 @@ packages:
       '@shopify/shopify-api': 9.3.0
     dev: false
 
-  /@shopify/storefront-api-client@0.2.3:
-    resolution: {integrity: sha512-n1QITdbQnUFYQwRwYbZtjFQ6onFjdhmOeZw7Zl2K9iwXt7HjBYClMtgk3bbppAAzxDccpQBUimR2f9mt/oOgMg==}
+  /@shopify/shopify-app-session-storage@2.1.0(@shopify/shopify-api@9.3.0):
+    resolution: {integrity: sha512-U5ZUsh6trZKnhmeLIr6zzngVdDt52ShMtocFVIbn+dSpMYpHEHoOOr5GhU3KeklwbmpJ7gGsLYsFRWgkbIZoXQ==}
+    peerDependencies:
+      '@shopify/shopify-api': ^9.2.0
     dependencies:
-      '@shopify/graphql-client': 0.9.3
+      '@shopify/shopify-api': 9.3.0
     dev: false
 
   /@shopify/storefront-api-client@0.2.4:
